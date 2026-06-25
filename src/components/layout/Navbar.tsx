@@ -60,26 +60,12 @@ export function Navbar() {
             ))}
           </nav>
 
-          {!open && (
-            <Link
-              to="/menu"
-              dir={language === 'en' ? 'ltr' : 'rtl'}
-              className={`absolute left-1/2 inline-flex h-[clamp(36px,10.8vw,44px)] w-[clamp(126px,36.8vw,150px)] -translate-x-1/2 items-center justify-center rounded-full bg-[#075c34] p-0 text-[clamp(18px,5.6vw,23px)] font-normal leading-none text-white shadow-[0_5px_7px_rgba(0,0,0,0.3)] transition md:hidden ${
-                language === 'en' ? 'font-english' : 'font-dinar-one'
-              }`}
-            >
-              <span className="block w-full text-center leading-none">
-                {language === 'en' ? 'Order Now' : 'أطلب الآن'}
-              </span>
-            </Link>
-          )}
-
           <div className="flex shrink-0 items-center gap-[7px] md:gap-3">
             {!open && (
               <Link
                 to="/menu"
                 dir={language === 'en' ? 'ltr' : 'rtl'}
-                className={`hidden md:inline-flex h-[clamp(36px,10.8vw,44px)] w-[clamp(126px,36.8vw,150px)] items-center justify-center rounded-full bg-[#075c34] p-0 text-[clamp(18px,5.6vw,23px)] font-normal leading-none text-white shadow-[0_5px_7px_rgba(0,0,0,0.3)] transition ${
+                className={`inline-flex h-[clamp(34px,9.6vw,42px)] w-[clamp(112px,31vw,138px)] items-center justify-center rounded-full bg-[#075c34] p-0 text-[clamp(16px,4.8vw,21px)] font-normal leading-none text-white shadow-[0_5px_7px_rgba(0,0,0,0.3)] transition md:h-[clamp(36px,10.8vw,44px)] md:w-[clamp(126px,36.8vw,150px)] md:text-[clamp(18px,5.6vw,23px)] ${
                   language === 'en' ? 'font-english' : 'font-dinar-one'
                 }`}
               >
