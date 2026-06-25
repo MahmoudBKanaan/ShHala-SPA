@@ -7,7 +7,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <LanguageProvider>
         <div className="relative min-h-dvh">
           <BrandBackground />
