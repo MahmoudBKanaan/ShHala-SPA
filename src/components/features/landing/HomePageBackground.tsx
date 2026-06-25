@@ -1,0 +1,1 @@
+export { BrandBackground as HomePageBackground } from '@/components/layout/BrandBackground';
